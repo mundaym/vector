@@ -4,7 +4,7 @@
 
 // func Sum(v []int16) int16
 TEXT ·Sum(SB), NOSPLIT, $0-26
-	MOVQ v_ptr+0(FP), R8
+	MOVQ v_base+0(FP), R8
 	MOVQ v_len+8(FP), R9
 	SHLQ $1, R9
 	ADDQ R8, R9
