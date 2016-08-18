@@ -3,4 +3,5 @@
 
 package vector
 
+//go:noescape
 func Sum(v []int16) int16
